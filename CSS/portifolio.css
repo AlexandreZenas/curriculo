@@ -1,0 +1,286 @@
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+}   
+html, body{
+}
+/* classes auxiliares*/
+    .clear{
+        clear: both;
+    }
+    .line-text{
+        width: 25px;
+        padding: 2px 0 0px 0;
+        position: relative;
+        display: inline-block;
+        color: black;
+    }
+    .line-text > div{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background:black;
+    }
+
+/*section 1*/
+    section.section01{
+        position: relative;
+        height: 60%;
+        width: 100%;
+        left:0;
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: url(.././fotos/wallpaper5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+        /*overlay*/
+            section.section01 div.overlay{           
+                z-index: 1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background:rgba(0,0,0,0);
+                left: 0;
+                top: 0;
+            }
+        /*container 1*/
+            section.section01 div.container01{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                margin: 0 auto;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+            }
+            /* box h1_a1*/
+                div.container01 div.h1_a1{
+                    
+                    padding: 120px 0px 0 0;
+                    text-align: center;
+
+                    
+                }
+                    div.h1_a1 div.h1_a{
+                        margin: 0 auto;
+                        width: 60px;
+                        height: 80px;
+                        border: 4px solid #ebd394;
+                    }
+                        div.h1_a h2{
+                            font-size: 65px;
+                            font-weight: normal;
+                            font-family :'Times New Roman', Times, serif;
+                            color: #ebd394;                        
+                        }
+                div.container01 h1{
+                    padding: 80px 0 10px 0;
+                    font-weight: normal ;
+                    font-size: 50px;
+                    color:#785f1d;
+
+                }
+                div.container01 p {
+                    padding: 20px 0 120px 0;
+                    color:white;
+                    
+                }
+                div.container01 img{
+                    width:90px;
+                }
+/*section 02*/
+    section.section02{
+        width: 90%;
+        margin: 0 auto;
+    }
+    /*container 02*/
+        section.section02 div.container02{
+            width: 60%;
+            border: 1px solid black;
+            margin-top: 80px;
+            float: left;
+        }
+            div.container02 i.bars2{
+                font-size: 45px;
+                font-weight: 10;
+                margin: 20px 0 0 -20px ;
+                background-color: white;
+            }
+        /*conteudos da section*/
+            div.container02 div.conteudo{
+                padding-left: 25px;
+                padding-bottom: 40px;
+            }
+            /*parte 01*/
+                div.container02 i.fa-bookmark{
+                    font-size: 50px;    
+                    padding: 0px 40px 10px 0;         
+                }
+                div.conteudo h2{
+                    padding:30px 0 0 0;
+                    font-size: 35px;
+                }
+                div.conteudo p {
+                    font-size: 20px;
+                }
+            /*parte 02*/
+                div.container02 i.fa-baseball-ball {
+                    padding: 25px 0 0 0;
+                    font-size: 35px;
+                }
+                div.conteudo h3{
+                    font-size: 30px;
+                    padding: 15px 0 0 0;
+                }
+                div.conteudo h3 p {
+                    padding:0 0 20px 0 ;
+                }
+                /*parte 03*/
+                div.container02 i.fa-chalkboard-teacher{
+                    font-size: 40px;
+                    padding: 45px 0 0 0;
+                }
+                div.container02 div.line03{
+                    width: 100px;
+                    padding: 2px 0 0px 0;
+                    position: relative;
+                    display: inline-block;
+                    color: black;
+                }
+                div.container02 h4{
+                    font-size: 30PX;
+                    font-weight:20;
+                    padding: 25px 0 0 0;
+                }
+                div.container02 .block{
+                    padding-top: 15px;
+                }
+                div.container02 .block a{
+                    padding: 0 0 0 5px;
+                    font-style: normal;
+                    text-decoration: none;
+                    color: black;
+                }
+    /*container 03*/
+        div.container03{
+            width: 35%;
+            border: 1px solid black;
+            margin-top: 80px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+        }
+        /*foto na sala*/
+            div.container03 div.box_foto_na_sala {
+                text-align: center;
+                align-items: center;
+                height: 300px;
+                width: 300px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 50px;
+            }
+                div.container03 div.box_foto_na_sala img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;     
+                    object-fit: cover;
+                    object-position: top;           
+                }    
+        /*informações*/ 
+            div.container03 div.box_informações{               
+                width: 75%;
+                padding-left: 0px;
+                flex-wrap: wrap;
+                padding-top: 50px;
+                
+            }
+            div.container03 div.box_informações h5{
+                padding: 20px 0 0 0;
+            }
+            div.box_informações i.fa-external-link{
+                font-size: 30px;
+                padding-right:  ;
+                float: right;
+            }
+            div.box_informações i{
+                font-size: 30px;
+                padding: 20px 10px 0 0;
+                color: black;
+                text-decoration: none;
+            }
+
+        
+/*medias*/
+
+    @media screen and (max-width:768px){
+        div.container01 h1{
+            font-size: 35px;
+        }
+    }
+    @media screen and (max-width:1280px){
+        div.container03 {
+            width: 100%;
+        }
+        section.section02 div.container02{
+            width: 100%;
+        }
+    }
