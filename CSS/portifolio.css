@@ -53,350 +53,380 @@ table {
    box-sizing: border-box;
    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
 }   
-html, body{
-}
 /* classes auxiliares*/
-    .clear{
-        clear: both;
-    }
-    .line-text{
-        width: 25px;
-        padding: 2px 0 0px 0;
-        position: relative;
-        display: inline-block;
-        color: black;
-    }
-    .line-text > div{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background:black;
-    }
+.clear{
+    clear: both;
+}
+.line-text{
+    width: 25px;
+    padding: 2px 0 0px 0;
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+.line-text > div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:black;
+}
 
 /*section 1*/
-    section.section01{
-        position: relative;
-        height: 60%;
-        width: 100%;
-        left:0;
-        max-width: 100%;
-        margin: 0 auto;
-        background-image: url(.././fotos/wallpaper5.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+section.section01{
+    position: relative;
+    height: 60%;
+    width: 100%;
+    left:0;
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: url(.././fotos/wallpaper7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*overlay*/
+section.section01 div.overlay{           
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0);
+    left: 0;
+    top: 0;
+}
+/*container 1*/
+section.section01 div.container01{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+    /* box h1_a1*/
+    div.container01 div.h1_a1{
+        
+        padding: 120px 0px 0 0;
+        text-align: center;
+
+        
     }
-        /*overlay*/
-            section.section01 div.overlay{           
-                z-index: 1;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background:rgba(0,0,0,0);
-                left: 0;
-                top: 0;
+        div.h1_a1 div.h1_a{
+            margin: 0 auto;
+            width: 60px;
+            height: 80px;
+            border: 4px solid #ebd394;
+        }
+            div.h1_a h2{
+                font-size: 65px;
+                font-weight: normal;
+                font-family :'Times New Roman', Times, serif;
+                color: #ebd394;                        
             }
-        /*container 1*/
-            section.section01 div.container01{
-                width: 100%;
-                height: 100%;
-                position: relative;
-                margin: 0 auto;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                z-index: 2;
-            }
-            /* box h1_a1*/
-                div.container01 div.h1_a1{
-                    
-                    padding: 120px 0px 0 0;
-                    text-align: center;
+    div.container01 h1{
+        padding: 80px 0 10px 0;
+        font-weight: normal ;
+        font-size: 50px;
+        color:#785f1d;
 
-                    
-                }
-                    div.h1_a1 div.h1_a{
-                        margin: 0 auto;
-                        width: 60px;
-                        height: 80px;
-                        border: 4px solid #ebd394;
-                    }
-                        div.h1_a h2{
-                            font-size: 65px;
-                            font-weight: normal;
-                            font-family :'Times New Roman', Times, serif;
-                            color: #ebd394;                        
-                        }
-                div.container01 h1{
-                    padding: 80px 0 10px 0;
-                    font-weight: normal ;
-                    font-size: 50px;
-                    color:#785f1d;
-
-                }
-                div.container01 p {
-                    padding: 20px 0 120px 0;
-                    color:white;
-                    
-                }
-                div.container01 img{
-                    width:90px;
-                }
+    }
+    div.container01 p {
+        padding: 20px 0 120px 0;
+        color:white;
+        
+    }
+    div.container01 img{
+        width:90px;
+    }
 /*section 02*/
-    section.section02{
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-        float: left;
+section.section02{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+}
+/*container S2 01*/
+section.section02 div.containerS201{
+    width: 35%;
+    border: 1px solid black;
+    margin-top: 80px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin-right: 5%;
+}
+    /*foto*/
+    div.containerS201 div.box_foto_na_sala {
+        text-align: center;
+        align-items: center;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
     }
-    /*container 02*/
-        section.section02 div.container02{
-            width: 50%;
-            border: 1px solid black;
-            margin-top: 80px;
-            float: left;
-            margin-left: 5%;
+        div.box_foto_na_sala img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;     
+            object-fit: cover;
+            object-position: top;           
         }
-            div.container02 i.bars2{
-                font-size: 45px;
-                font-weight: 10;
-                margin: 20px 0 0 -20px ;
-                background-color: white;
-            }
-        /*conteudos da section*/
-            div.container02 div.conteudo{
-                padding-left: 25px;
-                padding-bottom: 40px;
-            }
-            /*parte 01*/
-                div.container02 i.fa-bookmark{
-                    font-size: 50px;    
-                    padding: 0px 40px 10px 0;         
-                }
-                div.conteudo h2{
-                    padding:30px 0 0 0;
-                    font-size: 35px;
-                }
-                div.conteudo p {
-                    font-size: 20px;
-                }
-            /*parte 02*/
-                div.container02 i.fa-baseball-ball {
-                    padding: 25px 0 0 0;
-                    font-size: 35px;
-                }
-                div.conteudo h3{
-                    font-size: 30px;
-                    padding: 15px 0 0 0;
-                }
-                div.conteudo h3 p {
-                    padding:0 0 20px 0 ;
-                }
-                /*parte 03*/
-                div.container02 i.fa-chalkboard-teacher{
-                    font-size: 40px;
-                    padding: 45px 0 0 0;
-                }
-                div.container02 div.line03{
-                    width: 100px;
-                    padding: 2px 0 0px 0;
-                    position: relative;
-                    display: inline-block;
-                    color: black;
-                }
-                div.container02 h4{
-                    font-size: 30PX;
-                    font-weight:20;
-                    padding: 25px 0 0 0;
-                }
-                div.container02 .block{
-                    padding-top: 15px;
-                }
-                div.container02 .block a{
-                    padding: 0 0 0 5px;
-                    font-style: normal;
-                    text-decoration: none;
-                    color: black;
-                }
-    /*container 03*/
-        div.container03{
-            width: 35%;
-            border: 1px solid black;
-            margin-top: 80px;
-            float: right;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-bottom: 40px;
-            margin-right: 5%;
+    /*informações*/ 
+    div.containerS201 div.box_informações{               
+        width: 75%;
+        padding-left: 0px;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        
+    }
+        div.box_informações h5, a{
+            padding: 18px 0 0 0;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
         }
-        /*foto*/
-            div.container03 div.box_foto_na_sala {
-                text-align: center;
-                align-items: center;
-                height: 400px;
-                width: 400px;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin-top: 50px;
+            div.box_informações a:hover{
+                color: gray;
             }
-                div.container03 div.box_foto_na_sala img{
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;     
-                    object-fit: cover;
-                    object-position: top;           
-                }    
-        /*informações*/ 
-            div.container03 div.box_informações{               
-                width: 75%;
-                padding-left: 0px;
-                flex-wrap: wrap;
-                padding-top: 50px;
-                
-            }
-            div.container03 div.box_informações h5{
-                padding: 20px 0 0 0;
-            }
-            div.box_informações i.fa-external-link{
-                font-size: 30px;
-                float: right;
-            }
-            div.box_informações i{
-                font-size: 30px;
-                padding: 20px 10px 0 0;
-                color: black;
+        div.box_informações h5 i.fa-whatsapp{
+                padding: 0 0 0 5px;
+                font-style: normal;
                 text-decoration: none;
-            }
-/*section 03*/
-    section.section03{
-        width: 100%;
-        margin: 0 auto;
-        float: left;
-        margin-top: 80PX;;
-    }
-    /*container S3 01*/
-        section.section03 div.containerS301{
-            width: 60%;
+                color: black;
+                font-weight: normal;
+                font-size: 18px;
+        }
+        div.box_informações i.fa-external-link{
+            font-size: 30px;
             float: right;
-            border: 1px solid black;
-            padding:0 0 40px 25px;
-            margin:0 5% 80px 0;
         }
-        /*S3 parte 01*/
-                div.S3parte01 i{
-                    font-size: 50px;
-                    margin-top: 30px;
-                }
-                div.S3parte01 h2{
-                    font-size: 30px;
-                    font-weight: 20;
-                }
-        /*S3 parte 02*/
-                div.S3parte02 H4 {
-                    font-size: 22px;
-                    font-weight: 20;
-                }
-                div.S3parte02 H5{
-                    font-size: 20px;
-                    font-weight: 20;
-                }
-                div.S3parte02 P{
-                    font-size: 17px;
-                    font-weight: bold;
-                }
-    /*container S3 02*/
-        section.section03 div.containerS302{
-            width: 25%;
-            float: left;
-            border: 1px solid black;
-            padding:0 0 40px 25px;
-            margin:0 0 80px 5%;
+        div.box_informações i{
+            font-size: 30px;
+            padding: 20px 10px 0 0;
+            color: black;
+            text-decoration: none;
         }
+/*container S2 02*/
+section.section02 div.containerS202{
+    width: 50%;
+    border: 1px solid black;
+    margin-top: 80px;
+    float: left;
+    margin-left: 5%;
+}
+    div.containerS202 i.bars2{
+        font-size: 45px;
+        font-weight: 10;
+        margin: 20px 0 0 -20px ;
+        background-color: white;
+    }
+    /*conteudos da section*/
+    div.containerS202 div.conteudo{
+        padding-left: 25px;
+        padding-bottom: 40px;
+        padding: 0 25px 40px 25px;
+    }
+        /*parte 01*/
+        div.conteudo i.fa-bookmark{
+            font-size: 50px;    
+            padding: 0px 40px 10px 0;         
+        }
+        div.conteudo h2{
+            padding:30px 0 0 0;
+            font-size: 28px;
+        }
+        div.conteudo h6{
+            font-weight: normal;
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+        div.conteudo p {
+            font-size: 17px;
+        }
+        div.conteudo a{
+            text-decoration:none;
+            color: grey;
+            font-weight: bold;
+        }
+        div.conteudo a:hover{
+            color: rgb(14, 7, 7);
+        }
+        /*parte 02*//*
+        div.conteudo i.fa-baseball-ball {
+            padding: 25px 0 0 0;
+            font-size: 35px;
+        }
+        div.conteudo h3{
+            font-size: 30px;
+            padding: 15px 0 0 0;
+        }
+        div.conteudo h3 p {
+            padding:0 0 20px 0 ;
+        }*/
+        
+
+        
+        
+
+/*section 03*/
+section.section03{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    margin-top: 80PX;;
+}
+/*container S3 01*/
+section.section03 div.containerS301{
+    width: 60%;
+    float: right;
+    border: 1px solid black;
+    padding:0 25px 40px 25px;
+    margin:0 5% 80px 0;
+}
+    /*S3 parte 01*/
+        div.S3parte01 i{
+            font-size: 50px;
+            margin-top: 30px;
+        }        
+    /*S3 parte 02*/
+        div.S3parte02 h2{
+            font-size: 30px;
+            font-weight: 20;
+        }
+        div.S3parte02 H4 {
+            font-size: 22px;
+            font-weight: 4000;
+        }
+        div.S3parte02 H5{
+            font-size: 20px;
+            font-weight: 20;
+            margin-bottom:8px ;
+        }
+        div.S3parte02 P{
+            font-size: 20px;
+            font-weight: 20;
+        }
+        div.S3parte02 i.fa-chalkboard-teacher{
+            font-size: 40px;
+            padding: 30px 0 0 0;
+        }
+        div.S3parte02 div.line03{
+            width: 100px;
+            padding: 2px 0 0px 0;
+            position: relative;
+            display: inline-block;
+            color: black;
+        }
+        div.S3parte02 h4.redes-sociais{
+            font-size: 30PX;
+            font-weight:normal;
+            padding: 25px 0 0 0;
+        }
+        div.S3parte02 p.block{
+            padding: 15px 0;
+        }
+            p.block i{
+                padding: 0 0 0 5px;
+                font-style: normal;
+                text-decoration: none;
+                color: black;
+                font-weight: normal;                
+            }
+                p.block i:hover{
+                    text-decoration: underline;
+                }
+
+/*container S3 02*/
+section.section03 div.containerS302{
+    width: 25%;
+    float: left;
+    border: 1px solid black;
+    padding:0 0 40px 25px;
+    margin:0 0 80px 5%;
+}
+    /*S3 parte 03*/
         div.S3parte03 i{
             font-size: 50px;
             margin-top: 30px;
         }
-
-
-
-
         div.S3parte03 h2{
             font-size: 30px;
             font-weight: 20;
             padding-bottom: 40PX;
         }
-        div.S3parte04 {
-            float: right;
-            margin:0 30px 0 30px;
-            text-align: right;
-            width: 100%;
-        }
+    /*S3 parte 04*/ 
+    div.containerS302 div.S3parte04 {
+        float: right;
+        margin:0 30px 0 30px;
+        text-align: right;
+        width: 100%;
+    }
         div.S3parte04 h2{
             font-size: 22px;
             font-weight: bold;
+            margin-bottom: 80px;            
         }
-        div.S3parte04  div.line-textS3{
-            margin-bottom: 50px;
-        }
-        div.S3parte04 p {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        div.S3parte04 p.porcentagem{
-            float: left;
-            margin-left: 10px;
-            color:gray;
-        }
-        div.div_line{
+        /*porcentagem das linguagens*/
+        div.S3parte04 div.div_line{
             padding: 20px 0 0 0;
-        }
-            div.S3parte04  div.line{
-                width: 90%;
-                background-color: gray;
+        }        
+            div.div_line p {
+                font-size: 18px;
+                font-weight: bold;
             }
-            div.S3parte04  div.lineS3{
+            div.div_line p.porcentagem{
+                float: left;
+                margin-left: 10px;
+                color:gray;
+            }
+            /*graficos da porcentagem*/ 
+            div.div_line  div.lineS3{
                 width: 90%;
                 height: 5px;
                 background-color: gray;
                 border-radius: 20px;
             }
-            div.S3parte04  div.line_One{
-                width: 85%;
-                height: 100%;
-                background-color: black;
-                margin-left: 15%;
-                top: 0;
-            }
-            div.S3parte04  div.line_Two{
-                width: 80%;
-                height: 100%;
-                background-color: black;
-                margin-left: 20%;
-                top: 0;
-            }
-            div.S3parte04  div.line_Three{
-                width: 9%;
-                height: 100%;
-                background-color: black;
-                margin-left: 91%;
-                top: 0;
-            }
-            div.sinais i{
-                font-size: 30px;
-                font-weight: bold;
-                padding: 20px 20px 0 0;
-            }
+                div.div_line  div.line_One{
+                    width: 85%;
+                    height: 100%;
+                    background-color: black;
+                    margin-left: 15%;
+                    top: 0;
+                }
+                div.div_line  div.line_Two{
+                    width: 65%;
+                    height: 100%;
+                    background-color: black;
+                    margin-left: 35%;
+                    top: 0;
+                }
+                div.div_line  div.line_Three{
+                    width: 45%;
+                    height: 100%;
+                    background-color: black;
+                    margin-left: 55%;
+                    top: 0;
+                }
+    /*Sinais <>*/    
+    div.containerS302 div.sinais i{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px 20px 0 0;
+    }
         
 /*medias*/
-
     @media screen and (max-width:768px){
         div.container01 h1{
             font-size: 35px;
         }
-        div.container03 div.box_foto_na_sala{
+        div.containerS201 div.box_foto_na_sala{
             width: 200px;
             height: 200px;;
         }
@@ -408,18 +438,19 @@ html, body{
             margin: 0 auto;
             margin-top: 0px;
         }
-        div.container03 {
+        section.section02 div.containerS201 {
             width: 100%;
             margin:0 auto;
             margin-top: 40px;
         }
-        section.section02 div.container02{
+        section.section02 div.containerS202{
             width: 100%;
             margin: 0 auto;
             margin-top: 40px;
         }
         section.section03 div.containerS302{
             width: 100%;
+            padding: 0 10%;
             margin:0 auto;
             margin-top: 40px;
         }
