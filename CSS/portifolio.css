@@ -152,7 +152,7 @@ section.section02{
 section.section02 div.containerS201{
     width: 35%;
     border: 1px solid black;
-    margin-top: 80px;
+    margin-top: 70px;
     float: right;
     display: flex;
     justify-content: center;
@@ -217,7 +217,7 @@ section.section02 div.containerS201{
 section.section02 div.containerS202{
     width: 50%;
     border: 1px solid black;
-    margin-top: 80px;
+    margin-top: 70px;
     float: left;
     margin-left: 5%;
 }
